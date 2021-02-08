@@ -92,7 +92,7 @@ Since openpilot v0.8.0 Arne has decide to base his fork on [DragonPilot](https:/
 ### OpEdit features
 all OpEdit features can be manged by running the command `python /data/openpilot/op_edit.py`
 - Ability to ruduce or Increase curvature Factor. It will also works with eco and sport mode. If using eco mode then it will start breaking early (350 m before) if using sport mode it will slow down little late (150 m).
-- Live speedlimit_offset in `op_tune.py`
+- Live speedlimit_offset: Change under "speed_offset:" (default 0) in op_edit.
 - [Dynamic distance profiles](https://github.com/ShaneSmiskol/ArnePilot/tree/stock_additions-devel#dynamic-follow-3-profiles) from Shane (In other word three different dynamic profiles: (`close`, `normal`, `far`, `auto`). Profile can be adjusted from either op_edit.py or using the on screen buttons(can take up to 4 sec to for new profile to be adjusted).
 - [Dynamic Gas](https://github.com/ShaneSmiskol/ArnePilot/tree/stock_additions-devel#dynamic-gas)
 This aims to provide a smoother driving experience in stop and go traffic (under 20 mph) by modifying the maximum gas that can be applied based on your current velocity and the relative velocity of the lead car. It'll also of course increase the maximum gas when the lead is accelerating to help you get up to speed quicker than stock. And smoother; this eliminates the jerking you get from stock ArnePilot with comma pedal. It tries to coast if the lead is only moving slowly, it doesn't use maximum gas as soon as the lead inches forward :). When you are above 20 mph, relative velocity and the following distance is taken into consideration.
